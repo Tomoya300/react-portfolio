@@ -7,6 +7,7 @@ import demoTaskApp from '../assets/demotaskapp.png';
 import demoChat from '../assets/demochat.png';
 import demoEC2 from '../assets/demoEC2.png'
 import demoEC3 from '../assets/demoEC3.png';
+import lootGame from '../assets/loot.png'
 import { useEffect, useState } from 'react';
 import { Collapse } from 'react-collapse';
 import useMediaQuery from '../hooks/useMediaQuery';
@@ -46,7 +47,8 @@ const Projects = () => {
         duration: 1,
         ease: 'power2.out',
         stagger: 0.2
-      }
+      },
+      '-=0.2'
     );
 
     if (isSmall) {
@@ -59,7 +61,8 @@ const Projects = () => {
           duration: 1,
           ease: 'power2.out',
           stagger: 0.2
-        }
+        },
+        '-=0.2'
       );
     }
 
@@ -75,6 +78,12 @@ const Projects = () => {
       <h1 className='projects text-4xl font-bold mb-8'>Projects</h1>
       {isSmall ? (
         <div className='grid sm:grid-cols-2 gap-y-10 justify-items-center w-full'>
+          <div className='project0 flex flex-col'>
+            <h2 className='text-xl mb-3'>Board Game(Loot)</h2>
+            <a target='_blank' href="https://loot-frontend.onrender.com/" className='rounded-lg'>
+              <img src={lootGame} alt="loot image" className='w-[300px] rounded-sm shadow-[0px_0px_8px_gray] hover:shadow-[0_3px_8px_gray] hover:scale-101 transition'/>
+            </a>
+          </div>
           <div className='project1 flex flex-col'>
             <h2 className='text-xl mb-3'>Bank HP</h2>
             <a target='_blank' href="https://tomoya300.github.io/easybank-landing-page-master/" className='rounded-lg'>
@@ -134,6 +143,12 @@ const Projects = () => {
         </div>
       ) : (
         <div className='grid sm:grid-cols-2 gap-y-10 justify-items-center w-full'>
+          <div className='dProject0 flex flex-col'>
+            <h2 className='text-xl mb-3'>Board Game(Loot)</h2>
+            <a target='_blank' href="https://loot-frontend.onrender.com/" className='rounded-lg'>
+              <img src={lootGame} alt="loot image" className='w-[300px] rounded-sm shadow-[0px_0px_8px_gray] hover:shadow-[0_3px_8px_gray] hover:scale-101 transition'/>
+            </a>
+          </div>
           <div className='dProject1 flex flex-col'>
             <h2 className='text-xl mb-3'>Bank HP</h2>
             <a target='_blank' href="https://tomoya300.github.io/easybank-landing-page-master/" className='rounded-lg'>

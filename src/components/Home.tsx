@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import myImage from '../assets/me.jpg'
+import myImage from '../assets/me001.jpg'
 import { gsap } from 'gsap'
 
 
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <section className='flex flex-col items-center w-full justify-center gap-4 sm:px-4 pt-4 pb-20 '>
       <div className='name w-full text-center p-16'>
-        <h1 className='text-4xl font-bold'>TOMOYA TAKESHIMA</h1>
+        <h1 className='text-5xl font-bold'>TOMOYA TAKESHIMA</h1>
       </div>
       <div className='flex max-sm:flex-col max-sm:gap-8 items-center gap-8 justify-center'>
         <div className='sm:w-1/2 p-2'>

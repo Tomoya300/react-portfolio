@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiReact, SiTailwindcss, SiAstro, SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiReact, SiTailwindcss, SiAstro, SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql, SiGreensock, SiFramer } from 'react-icons/si';
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -56,7 +56,7 @@ const Skills = () => {
     <section id='skills' className='w-full flex flex-col items-center pb-20'>
       <h1 className='skills text-4xl font-bold mb-4 text-center w-full'>Skills</h1>
       <div className='px-4 flex flex-col'>
-        <div>
+        <div className='max-md:pl-6'>
           <h2 className='text-3xl mb-4'>Frontend</h2>
           <ul className='flex flex-wrap gap-y-2'>
             <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='html flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiHtml5 title='HTML'/>HTML</li>
@@ -68,9 +68,11 @@ const Skills = () => {
             <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='tailwind flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiTailwindcss title='Tailwindcss'/>TailwindCSS</li>
             <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='astro flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiAstro title='Astro'/>Astro</li>
             <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='next flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiNextdotjs title='Next.js'/>Next.js</li>
+            <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='next flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiGreensock title='GSAP'/>GSAP</li>
+            <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='next flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 transition hover:bg-neutral-900 w-[200px]'><SiFramer title='Framer motion'/>Framer Motion</li>
           </ul>
         </div>
-        <div>
+        <div className='max-md:pl-6'>
           <h2 className='text-3xl mb-4 mt-12'>Backend</h2>
           <ul className='flex flex-wrap gap-y-2'>
             <li onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave} className='nodejs flex gap-1 text-xl items-center mr-4 bg-neutral-500 text-white p-2 hover:scale-105 transition hover:bg-neutral-900 w-[200px]'><SiNodedotjs title='Node.js'/>Node.js</li>

@@ -27,10 +27,10 @@ const Header = () => {
         </button>
         </div>
         <div className={`flex flex-col items-end gap-2 fixed top-18 right-2 transform ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'} transition ${isMobile ? 'bg-white rounded shadow-lg w-[100px]' : ''}`}>
-          <a href={`${location.pathname === '/contact' ? '/' : '#'}`} className={`uppercase hover:underline transition ${isMobile ? 'border-b p-2 w-full' : ''}`}>Home</a>
-          <a href={`${location.pathname === '/contact' ? '/#skills' : '#skills'}`} className={`uppercase hover:underline transition ${isMobile ? 'border-b p-2 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Skills</a>
-          <a href={`${location.pathname === '/contact' ? '/#projects' : '#projects'}`} className={`uppercase hover:underline transition ${isMobile ? 'border-b p-2 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Projects</a>
-          <Link to='/contact' className={`uppercase hover:underline transition ${isMobile ? 'border-b p-2 w-full' : ''}`}>Contact</Link>
+          <a href={`${location.pathname === '/contact' ? '/' : '#'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Home</a>
+          <a href={`${location.pathname === '/contact' ? '/#skills' : '#skills'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Skills</a>
+          <a href={`${location.pathname === '/contact' ? '/#projects' : '#projects'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Projects</a>
+          <Link to='/contact' className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Contact</Link>
         </div>
       </nav>
     </header>

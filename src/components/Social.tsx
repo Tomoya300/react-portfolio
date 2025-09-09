@@ -26,7 +26,7 @@ const Social = () => {
   }, [])
   
   return (
-    <section className='py-20'>
+    <section className='sm:py-20'>
       <h1 className='socials text-4xl font-bold text-center mb-14'>Socials</h1>
       <div className='w-full text-center'>
         <Link to='/contact' className="contact font-bold py-4 rounded bg-neutral-300 px-8 py-2 uppercase w-[180px] hover:bg-neutral-800 hover:text-white transition">Contact</Link>
