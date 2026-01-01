@@ -22,16 +22,23 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex justify-between px-6">
-        <button onClick={toggleMenu} className="transition fixed top-4 right-4 z-50 ">
-          {isOpen ? <X className="w-8 h-8"/> : <Menu className="w-8 h-8"/>}
-        </button>
+          <button onClick={toggleMenu} className="transition fixed top-4 right-4 z-50 cursor-pointer">
+            {isOpen ? <X className="w-8 h-8"/> : <Menu className="w-8 h-8"/>}
+          </button>
         </div>
-        <div className={`flex flex-col items-end gap-2 fixed top-18 right-2 transform ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'} transition ${isMobile ? 'bg-white rounded shadow-lg w-[100px]' : ''}`}>
-          <a href={`${location.pathname === '/contact' ? '/' : '#'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Home</a>
-          <a href={`${location.pathname === '/contact' ? '/#skills' : '#skills'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Skills</a>
-          <a href={`${location.pathname === '/contact' ? '/#projects' : '#projects'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Projects</a>
-          <Link to='/contact' className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Contact</Link>
+          
+        <div className={`${isOpen ? 'top-0 left-0 fixed w-screen h-screen bg-black/70 z-2' : ''}`}>
+          <div className={`flex flex-col items-center gap-4 text-2xl w-[18vw] bg-white h-full fixed right-0 top-0 transition pt-20 ${isMobile ? 'text-base' : ''} ${isOpen ? 'opacity-100 bg-white translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+            <a href={`${location.pathname === '/contact' ? '/' : '#'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Home</a>
+            <a href={`${location.pathname === '/contact' ? '/#skills' : '#skills'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Skills</a>
+            <a href={`${location.pathname === '/contact' ? '/#projects' : '#projects'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Projects</a>
+            <Link to='/contact' className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Contact</Link>
+          </div>
+
         </div>
+        
+        
+        
       </nav>
     </header>
   )

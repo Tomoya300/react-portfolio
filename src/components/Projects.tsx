@@ -23,7 +23,7 @@ const Projects = () => {
   const isSmall = useMediaQuery('(max-width: 640px)');
 
   useEffect(() => {
-    const projectsArray = gsap.utils.toArray('.dProject1, .dProject2, .dProject3, .dProject4, .dProject5, .dProject6, .dPrject7, .dProject8, .dProject9')
+    const projectsArray = gsap.utils.toArray('.dProject0, .dProject1, .dProject2, .dProject3, .dProject4, .dProject5, .dProject6, .dProject7, .dProject8, .dProject9')
 
     const mobilleProjects = gsap.utils.toArray('.project1, .project2, .project3')
 
