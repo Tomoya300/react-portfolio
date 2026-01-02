@@ -29,7 +29,7 @@ const Header = () => {
           
         <div className={`${isOpen ? 'top-0 left-0 fixed w-screen h-screen bg-black/70 z-2' : ''}`}>
           <div className={`flex flex-col items-center gap-4 text-2xl w-[18vw] bg-white h-full fixed right-0 top-0 transition pt-20 ${isMobile ? 'text-base' : ''} ${isOpen ? 'opacity-100 bg-white translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
-            <a href={`${location.pathname === '/contact' ? '/' : '#'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Home</a>
+            <a href={`${location.pathname === '/contact' ? '/portfolio' : '#'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Home</a>
             <a href={`${location.pathname === '/contact' ? '/#skills' : '#skills'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Skills</a>
             <a href={`${location.pathname === '/contact' ? '/#projects' : '#projects'}`} className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''} ${location.pathname === '/contact' ? 'hidden' : ''}`}>Projects</a>
             <Link to='/contact' className={`uppercase hover:underline transition py-2 ${isMobile ? 'border-b p-3 w-full' : ''}`}>Contact</Link>
