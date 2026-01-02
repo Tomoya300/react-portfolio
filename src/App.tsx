@@ -5,7 +5,7 @@ import ContactLayout from "./pages/ContactLayout"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="contact" element={<ContactLayout />}>
