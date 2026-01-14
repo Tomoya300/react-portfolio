@@ -83,12 +83,15 @@ const Projects = () => {
             <a target='_blank' href="https://loot-frontend.onrender.com/" className='rounded-lg'>
               <img src={lootGame} alt="loot image" className='w-[300px] rounded-sm shadow-[0px_0px_8px_gray] hover:shadow-[0_3px_8px_gray] hover:scale-101 transition'/>
             </a>
+            {/* <p className='w-[300px]'><span className='font-bold'>Tech Stack: </span>React.js, TailwindCSS, Framer Motion, etc.</p> */}
           </div>
           <div className='project1 flex flex-col'>
             <h2 className='text-xl mb-3'>Bank HP</h2>
             <a target='_blank' href="https://tomoya300.github.io/easybank-landing-page-master/" className='rounded-lg'>
               <img src={demoBank} alt="demo bank image" className='w-[300px] rounded-sm shadow-[0px_0px_8px_gray] hover:shadow-[0_3px_8px_gray] hover:scale-101 transition'/>
             </a>
+            {/* <p className='w-[300px]'><span className='font-bold'>Tech Stack: </span>React.js, TailwindCSS,</p> */}
+
           </div>
           <div className='project2 flex flex-col'>
             <h2 className='text-xl mb-3'>Hair salon HP</h2>
